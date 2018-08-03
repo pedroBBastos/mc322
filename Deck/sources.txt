@@ -1,0 +1,5 @@
+./java/deck/Value.java
+./java/deck/Card.java
+./java/deck/Deck.java
+./java/deck/Teste/Teste.java
+./java/deck/Suit.java
