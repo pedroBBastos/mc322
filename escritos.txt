@@ -1,0 +1,55 @@
+sistema para alunos submeterem a classe Jogador
+	- upar .java da classe Jogador - essa classe sera implementacao de uma classe abstrata que definiremos
+	- usar este .java para efetuar os testes do jogo.
+		- inicialmente, para os alunos testarem, o sistema printara a saída com o jogo com limitante inferior de dificuldade
+		- o sistema, para o campeonatinho, talvez deverá ter algum local para dois jogadores se encontrarem para jogar.
+		- se ficar muito trabalhoso, o sistema será um .jar (executavel) para os alunos poderem testar.
+
+- antes de tudo teremos que definir as regras do jogo e exercitar o jogo para fixá-las
+	- deck de 32 ou 24 cartas
+		- A K Q J 10 9 8 7 ou A K Q J 10 9
+	PRÉ-JOGO
+		- Jogadores escolhem suas cores e depois o naipe trunfo de cada, de acordo com a cor que escolheram.
+		- após embaralhar, o Jogador1 compra metade das cartas do baralho e as coloca na mesa viradas para cima. Este jogador
+		pega as cartas de sua cor e coloca as restantes (as de cores do Jogador2) de volta no baralho.
+		- depois disso, o Jogador2 deve pegar exatamente as mesmas cartas que o Jogador1 nos naipes de sua cor (cor do Jogador2).
+		Aqui deve-se ressaltar a equivalencia de naipes, ou seja, se o Jogador1 pegou uma carta com seu naipe trunfo, o Jogador2 deve
+		pegar a mesma carta na sua cor e também sendo de seu naipe trunfo. Caso contrário, se Jogador1 pegar uma carta de um naipe
+		que não é de seu naipe trunfo, o Jogador2 deve proceder da mesma forma pegando a mesma carta no naipe de sua cor que
+		não é seu naipe trunfo.
+	O JOGO
+		- o jogo é jogado em turnos em que apenas um dos jogadores poderá vencer por turno.
+		- no primeiro turno, o Jogador1 joga na mesa uma carta. O Jogador2, para ganhar o turno, deve:
+			- jogar uma carta melhor, uma carta com valor maior que a carta inicial, desde que seja do mesmo naipe.
+			- jogar uma de suas cartas trunfo (naipe trunfo), não importando seu valor, desde que não seja do mesmo naipe
+			do carta inicial.
+				"A 'better card' is a higher one of the same suit as the one led, or any other card of one's
+				personal trump (if different from the suit led)"
+
+
+			** CASOS PARA ANALISAR
+				- se o Jogador1 jogar uma carta de seu trunfo, o Jogador2 ganhará se jogar uma carta de seu trunfo? E se
+				forem as mesmas cartas, ambas trunfo, qual ganha?
+					- seguindo o exposto acima, o Jogador2 deve ganhar por estar jogando seu trunfo
+				- está correta a afirmação de resposta do Jogador2 em que ele não poderá colocar seu trunfo se uma carta de
+				seu trunfo foi colocada na mesa? Assim, cairia para a primeira afirmação? Jogar uma carta de melhor valor?
+				- na regra nao fala que se pode comprar a mesa caso algum jogador queira, e sim apenas quando o Jogador2 nao
+				tem como responder. O que nós iremos adotar?
+					- em caso de adotar a compra da mesa como uma opção de jogada, quais serão as regras para isso?
+
+		- O Jogador2 nao podendo responder à jogada do Jogador1, o Jogador2 deverá comprar a mesa.
+
+
+
+----------------------------------------------------------------------------------------------
+
+percepções
+	- no inicio, tudo que eu tenho meu oponente tem em reflexo
+
+Jogador1 - Preto - Paus
+Jogador2 - Vermelho - Copas
+
+
+
+
+
