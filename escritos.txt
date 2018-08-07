@@ -28,18 +28,19 @@ sistema para alunos submeterem a classe Jogador
 
 
 			** CASOS PARA ANALISAR
-				- se o Jogador1 jogar uma carta de seu trunfo, o Jogador2 ganhará se jogar uma carta de seu trunfo? E se
-				forem as mesmas cartas, ambas trunfo, qual ganha?
-					- seguindo o exposto acima, o Jogador2 deve ganhar por estar jogando seu trunfo
 				- está correta a afirmação de resposta do Jogador2 em que ele não poderá colocar seu trunfo se uma carta de
 				seu trunfo foi colocada na mesa? Assim, cairia para a primeira afirmação? Jogar uma carta de melhor valor?
-				- na regra nao fala que se pode comprar a mesa caso algum jogador queira, e sim apenas quando o Jogador2 nao
-				tem como responder. O que nós iremos adotar?
-					- em caso de adotar a compra da mesa como uma opção de jogada, quais serão as regras para isso?
+					- acho que nao pq deixaria o jogo muito amarrado
+
 
 		- O Jogador2 nao podendo responder à jogada do Jogador1, o Jogador2 deverá comprar a mesa.
 
-
+outra descrição do jogo:
+	https://super.abril.com.br/ciencia/trunfos-pessoais-e-intransferiveis/
+		- segundo consta aqui, a compra da mesa só eh feita como resposta de um descarte, não podendo ser
+		feita como jogada inicial do turno.
+			- quando alguém compra todas as cartas da mesa, tem de organizá-las à sua frente, junto com
+			as outras, e o adversário deve recomeçar a partida, fazendo um novo descarte.
 
 ----------------------------------------------------------------------------------------------
 
@@ -49,7 +50,10 @@ percepções
 Jogador1 - Preto - Paus
 Jogador2 - Vermelho - Copas
 
+--------------------
 
+iremos fazer o diagram de classes para, além de nos organizarmos em relação a implementação, podermos direcionar os labs,
+que podem ter as classes no formato das classes do jogo, para um formato semelhante
 
 
 
